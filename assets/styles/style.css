@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 h1 {
     text-align: center;
     color: currentColor;
@@ -5,10 +9,24 @@ h1 {
 
 .nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 40px;
     list-style: none;
-    font-size: 18px;
+}
+
+.nav-item {
+    color: cornflowerblue;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.nav-item:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.nav-item:active {
+    font-size: 25px;
 }
 
 .icon {
@@ -24,24 +42,64 @@ h1 {
 }
 
 .field {
-    border-bottom: 1px solid #eee;
-    padding: 10px;
-    border: 0;
-    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    font-size: 14px;
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 15px 3px 15px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+.button {
+    font-size: 14px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .reg {
     display: flex;
-    width: fit-content;
     margin: auto;
-    padding: 10px;
     flex-direction: column;
-    box-sizing: border-box;
-    border: 0;
+    width: fit-content;
 }
 
 .image {
-    display: flex;
     width: 300px;
     height: 300px;
+    border-radius: 50px;
+    border: 5px solid gray;
+}
+
+.section-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper {
+    width: 500px;
+    height: 250px;
+    background-color: cadetblue;
+    margin: auto;
+    border: 5px solid brown;
+    padding: 20px;
+}
+
+.wrapper-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.section-desc {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
 }
